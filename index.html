@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="author" content="Maheshiyo">
+    <meta name="description" content="Welcome to Maheshiyo's personal portfolio. Explore my profile, education, skills, thoughts, shayari and social media links.">
+    <meta name="keywords" content="Maheshiyo, Mahesh Portfolio, Personal Portfolio, Student Portfolio, Web Developer, Rajasthan">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Maheshiyo | Personal Portfolio</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maheshiyo | Personal Portfolio">
+    <meta property="og:description" content="Explore Maheshiyo's personal portfolio, education, skills and thoughts.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maheshiyo | Personal Portfolio">
+    <meta name="twitter:description" content="Explore my personal portfolio, skills and interests.">
+    <meta name="twitter:image" content="assets/images/profile.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Knewave&family=Nothing+You+Could+Do&family=Yuyu+Short&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <h1>Maheshiyo</h1>
+        <p>Welcome to my world</p>
+    </div>
+
+    <!-- Website Header -->
+    <header class="header">
+        <nav class="navbar">
+
+            <a href="index.html" class="logo" aria-label="Maheshiyo Home">
+                M<span>.</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m3 10 9-7 9 7"/>
+                            <path d="M5 9v12h14V9"/>
+                            <path d="M9 21v-7h6v7"/>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#shayari">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M8 3H5a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h3V3Z"/>
+                            <path d="M19 3h-3v9h3a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2Z"/>
+                            <path d="M3 12c0 5 3 8 8 9M21 12c0 5-3 8-8 9"/>
+                        </svg>
+                        <span>Shayari</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#about">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="8" r="4"/>
+                            <path d="M5 21v-2a7 7 0 0 1 14 0v2"/>
+                        </svg>
+                        <span>About</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#education">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m2 10 10-5 10 5-10 5-10-5Z"/>
+                            <path d="M6 12v5c4 3 8 3 12 0v-5"/>
+                            <path d="M22 10v6"/>
+                        </svg>
+                        <span>Education</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#skills">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m12 3 2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3Z"/>
+                        </svg>
+                        <span>Skills</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#social">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="18" cy="5" r="3"/>
+                            <circle cx="6" cy="12" r="3"/>
+                            <circle cx="18" cy="19" r="3"/>
+                            <path d="m8.7 10.6 6.6-4.2M8.7 13.4l6.6 4.2"/>
+                        </svg>
+                        <span>Social Media</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contact">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="5" width="18" height="14" rx="3"/>
+                            <path d="m3 7 9 6 9-6"/>
+                        </svg>
+                        <span>Contact</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="welcome-text">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    Hello, I'm
+                    <span>Maheshiyo</span>
+                </h1>
+
+                <h2>Developer | Student | Accountant</h2>
+
+                <p class="hero-description">
+                    A creative learner, technology enthusiast and passionate individual from Rajasthan, India.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+
+            </div>
+
+            <!-- Profile Picture -->
+            <div class="profile-container">
+
+                <div class="profile-frame">
+                    <img
+                        src="assets/images/profile.jpg"
+                        alt="Maheshiyo profile picture"
+                        class="profile-img"
+                        loading="eager"
+                    >
+                </div>
+
+                <p class="profile-caption">Mr Mahesh</p>
+
+            </div>
+
+        </section>
+
+        <!-- Home Page Shayari Section -->
+        <section class="shayari-section" id="shayari">
+
+            <p class="section-label">WORDS FROM THE HEART</p>
+
+            <h2>My Thoughts & Shayari</h2>
+
+            <p class="shayari-intro">
+                A few words, a thousand feelings.
+                Thoughts that inspire my journey.
+            </p>
+
+            <div class="shayari-grid">
+
+                <div class="shayari-card">
+                    <span class="shayari-number">01</span>
+                    <h3>My Dreams</h3>
+
+                    <p>
+                        I don't follow paths, I create my way,<br>
+                        I keep learning with every day.<br>
+                        Dreams in my heart, courage in my soul,<br>
+                        Step by step, I'm reaching my goal.
+                    </p>
+
+                    <span class="shayari-author">— Maheshiyo</span>
+                </div>
+
+                <div class="shayari-card">
+                    <span class="shayari-number">02</span>
+                    <h3>Life</h3>
+
+                    <p>
+                        Life is a journey, not a race,<br>
+                        Every moment has its own place.<br>
+                        Learn from yesterday, live today,<br>
+                        Let hope guide you along the way.
+                    </p>
+
+                    <span class="shayari-author">— Maheshiyo</span>
+                </div>
+
+                <div class="shayari-card">
+                    <span class="shayari-number">03</span>
+                    <h3>Success</h3>
+
+                    <p>
+                        Success is built with patience and time,<br>
+                        Small little steps make the mountain climb.<br>
+                        Stay true to your goals and believe,<br>
+                        Great things come to those who achieve.
+                    </p>
+
+                    <span class="shayari-author">— Maheshiyo</span>
+                </div>
+
+                <div class="shayari-card">
+                    <span class="shayari-number">04</span>
+                    <h3>Silence</h3>
+
+                    <p>
+                        Silence speaks when words fall short,<br>
+                        A peaceful mind is a powerful thought.<br>
+                        Not every story needs to be told,<br>
+                        Some feelings are worth more than gold.
+                    </p>
+
+                    <span class="shayari-author">— Maheshiyo</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="intro-section" id="about">
+
+            <p class="section-label">ABOUT MYSELF</p>
+
+            <h2>Something About Me</h2>
+
+            <p>
+                I am Mahesh Budelya, a B.Sc. Mathematics first-year student and an aspiring web developer.
+                I enjoy learning new technologies, exploring creative ideas and improving my communication skills. family first, 
+              proud to be a villager, belongs to a middle class family
+                I believe in continuous learning, building meaningful connections and creating useful digital experiences.
+            </p>
+
+        </section>
+
+        <!-- Education Section -->
+        <section class="details-section" id="education">
+
+            <p class="section-label">MY EDUCATION</p>
+
+            <h2>Education</h2>
+
+            <div class="details-grid">
+
+                <div class="detail-card">
+                    <h3>Current Education</h3>
+                    <p>B.Sc. First Year</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Subject</h3>
+                    <p>Mathematics</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Skills & Personal Details -->
+        <section class="details-section" id="skills">
+
+            <p class="section-label">MY PROFILE</p>
+
+            <h2>Personal Details & Interests</h2>
+
+            <div class="details-grid">
+
+                <div class="detail-card">
+                    <h3>Name</h3>
+                    <p>Mahesh Budelya</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Location</h3>
+                    <p>Rajasthan, India</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Education</h3>
+                    <p>B.Sc. Mathematics</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Profession</h3>
+                    <p>Student & Aspiring Web Developer</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Interests</h3>
+                    <p>Technology, Cricket & Editing</p>
+                </div>
+
+                <div class="detail-card">
+                    <h3>Learning</h3>
+                    <p>Web Development & Digital Skills</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="details-section" id="social">
+
+            <p class="section-label">LET'S CONNECT</p>
+
+            <h2>My Social Media</h2>
+
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/1ahesh/" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+                    </svg>
+                    <span>Instagram</span>
+                    <small>Personal Account</small>
+                </a>
+
+                <a href="https://www.instagram.com/komcl/" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+                    </svg>
+                    <span>Instagram</span>
+                    <small>My Page</small>
+                </a>
+
+                <a href="https://www.snapchat.com/add/maheshbudellya" class="social-btn snapchat" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2.5c-3 0-4.5 2.1-4.5 5v3.1c-.8.7-1.8 1-2.7 1.2-.5.1-.8.5-.6.9.3.7 1.5 1 2.2 1.1.4.8-.4 1.8-1.5 2.3-.5.2-.4.8.1 1 1 .4 2 .4 2.7.8.6.4 1.1 1.2 1.8 1.5 1.4.6 2.4-.3 3.5-.3s2.1.9 3.5.3c.7-.3 1.2-1.1 1.8-1.5.7-.4 1.7-.4 2.7-.8.5-.2.6-.8.1-1-1.1-.5-1.9-1.5-1.5-2.3.7-.1 1.9-.4 2.2-1.1.2-.4-.1-.8-.6-.9-.9-.2-1.9-.5-2.7-1.2V7.5c0-2.9-1.5-5-4.5-5Z"/>
+                    </svg>
+                    <span>Snapchat</span>
+                    <small>Connect</small>
+                </a>
+
+                <a href="https://t.me/maheshiyo" class="social-btn telegram" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M21.8 3.2 18.5 20c-.2 1.2-.9 1.5-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.3L6 13.4 1.1 11.9c-1.1-.3-1.1-1.1.2-1.6L20.4 2.9c.9-.3 1.7.2 1.4.3Z"/>
+                    </svg>
+                    <span>Telegram</span>
+                    <small>Message Me</small>
+                </a>
+
+                <a href="mailto:mxheshiyo@gmail.com" class="social-btn email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="14" rx="3"/>
+                        <path d="m3 7 9 6 9-6"/>
+                    </svg>
+                    <span>Email</span>
+                    <small>Contact Me</small>
+                </a>
+
+                <a href="https://www.instagram.com/bishnoi__rj_31/" class="social-btn brother" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="3" width="18" height="18" rx="5"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/>
+                    </svg>
+                    <span>Brother</span>
+                    <small>Instagram</small>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section class="intro-section" id="contact">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Have a question or want to connect?
+                You can contact me through email.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="mailto:mxheshiyo@gmail.com" class="btn">
+                    Send Email
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>© 2026 Maheshiyo. All Rights Reserved.</p>
+
+        <div class="footer-links">
+            <a href="pages/privacy-policy.html">Privacy Policy</a>
+            <a href="pages/terms-and-conditions.html">Terms &amp; Conditions</a>
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/loader.js"></script>
+
+</body>
+</html>
