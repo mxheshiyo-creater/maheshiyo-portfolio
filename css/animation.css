@@ -1,1 +1,621 @@
 
+/* =====================================
+   MAHESH PERSONAL PORTFOLIO
+   PREMIUM RESPONSIVE ANIMATION CSS
+===================================== */
+
+/* GLOBAL */
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: pageEnter 0.8s ease both;
+}
+
+/* PAGE ENTER */
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================
+   RESPONSIVE LOADING SCREEN
+===================================== */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    background: #FF70B8;
+    border: 8px solid #212121;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    overflow: hidden;
+
+    transition:
+        opacity 0.7s ease,
+        visibility 0.7s ease;
+}
+
+#loader h1 {
+    font-family: 'Knewave', cursive;
+
+    font-size: clamp(32px, 9vw, 90px);
+    line-height: 1.2;
+
+    max-width: 100%;
+    overflow-wrap: anywhere;
+
+    margin: 0;
+
+    animation: loaderText 1.5s ease-in-out infinite alternate;
+}
+
+#loader p {
+    font-family: 'Nothing You Could Do', cursive;
+
+    font-size: clamp(14px, 4vw, 22px);
+    font-weight: bold;
+    line-height: 1.5;
+
+    max-width: 100%;
+    overflow-wrap: anywhere;
+
+    margin: 12px 0 0;
+
+    animation: fadePulse 1.5s ease-in-out infinite;
+}
+
+/* LOADER SPINNER */
+
+#loader::after {
+    content: "";
+
+    width: clamp(30px, 9vw, 45px);
+    height: clamp(30px, 9vw, 45px);
+
+    flex-shrink: 0;
+
+    border: 5px solid #212121;
+    border-top-color: #FFFFFF;
+
+    border-radius: 50%;
+    margin-top: 25px;
+
+    animation: spinLoader 0.8s linear infinite;
+}
+
+#loader.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+/* LOADER KEYFRAMES */
+
+@keyframes spinLoader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loaderText {
+    from {
+        transform: scale(0.97);
+    }
+
+    to {
+        transform: scale(1.03);
+    }
+}
+
+@keyframes fadePulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 360px) {
+    #loader {
+        padding: 14px;
+        border-width: 5px;
+    }
+
+    #loader h1 {
+        font-size: clamp(30px, 9vw, 42px);
+    }
+
+    #loader p {
+        font-size: 14px;
+    }
+
+    #loader::after {
+        margin-top: 18px;
+    }
+}
+
+/* =====================================
+   NAVIGATION ANIMATION
+===================================== */
+
+.logo {
+    transition: transform 0.4s ease;
+}
+
+.logo:hover {
+    transform: rotate(-6deg) scale(1.08);
+}
+
+.nav-links li a {
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* NAV SVG ICON */
+
+.nav-icon {
+    transition:
+        transform 0.35s ease,
+        stroke 0.3s ease;
+}
+
+.nav-links li a:hover .nav-icon {
+    transform: scale(1.15) rotate(-8deg);
+}
+
+/* =====================================
+   MOBILE MENU BUTTON
+===================================== */
+
+.menu-btn {
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+.menu-btn:active {
+    transform: scale(0.92);
+}
+
+/* =====================================
+   HERO ANIMATION
+===================================== */
+
+.hero-content {
+    animation: slideFromLeft 1s ease both;
+}
+
+.profile-container {
+    animation: slideFromRight 1s ease both;
+}
+
+@keyframes slideFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(45px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* =====================================
+   PROFILE FLOATING ANIMATION
+===================================== */
+
+.profile-frame {
+    animation: profileFloat 4s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.profile-img {
+    transition: transform 0.6s ease;
+}
+
+.profile-frame:hover .profile-img {
+    transform: scale(1.08);
+}
+
+/* =====================================
+   BUTTON ANIMATION
+===================================== */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.btn::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    left: -120%;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+.btn:hover::before {
+    left: 120%;
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+.btn:active {
+    transform: scale(0.96);
+}
+
+/* =====================================
+   DETAIL CARD ANIMATION
+===================================== */
+
+.detail-card {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    animation: cardAppear 0.8s ease both;
+}
+
+.detail-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.detail-card:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.detail-card:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.detail-card:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.detail-card:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.detail-card:hover {
+    transform: translateY(-8px) rotate(-1deg);
+    box-shadow: 7px 7px 0 #FF70B8;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================
+   SOCIAL MEDIA BUTTON ANIMATION
+===================================== */
+
+.social-links a {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+
+    animation: socialFloat 3.5s ease-in-out infinite;
+}
+
+/* FLOATING DELAY */
+
+.social-links a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.social-links a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.social-links a:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.social-links a:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.social-links a:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.social-links a:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
+/* FLOATING EFFECT */
+
+@keyframes socialFloat {
+    0%, 100% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -5px;
+    }
+}
+
+/* SOCIAL SHINE */
+
+.social-links a::before {
+    content: "";
+
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.35);
+
+    transform: skewX(-25deg);
+    transition: left 0.5s ease;
+}
+
+.social-links a:hover::before {
+    left: 150%;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 5px 5px 0 #212121;
+    background: #FF70B8;
+}
+
+.social-links a:active {
+    transform: scale(0.96);
+}
+
+/* SOCIAL SVG ICON */
+
+.social-links a svg {
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    transition: transform 0.35s ease;
+}
+
+.social-links a:hover svg {
+    transform: scale(1.2) rotate(-8deg);
+}
+
+/* =====================================
+   SECTION REVEAL
+===================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =====================================
+   FOOTER ANIMATION
+===================================== */
+
+.footer-links a {
+    display: inline-block;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.footer-links a:hover {
+    transform: translateY(-3px);
+    color: #FF3294;
+}
+
+/* =====================================
+   GENERAL IMAGE ANIMATION
+===================================== */
+
+.profile-frame {
+    transition:
+        box-shadow 0.4s ease,
+        border-radius 0.4s ease;
+}
+
+.profile-frame:hover {
+    box-shadow: 15px 15px 0 #FF70B8;
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    .reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* =====================================
+   MOBILE FIRST LOADER FIX
+===================================== */
+
+#loader {
+    position: fixed !important;
+    inset: 0 !important;
+
+    width: 100% !important;
+    height: 100vh !important;
+    height: 100dvh !important;
+
+    min-height: 0 !important;
+
+    padding: 16px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+    overflow: hidden !important;
+    text-align: center !important;
+}
+
+#loader h1 {
+    width: 100%;
+    font-size: clamp(30px, 10vw, 52px) !important;
+    line-height: 1.2 !important;
+    overflow-wrap: anywhere;
+    margin: 0 !important;
+}
+
+#loader p {
+    width: 100%;
+    font-size: clamp(14px, 4.5vw, 19px) !important;
+    line-height: 1.5 !important;
+    margin-top: 12px !important;
+    overflow-wrap: anywhere;
+}
+
+#loader::after {
+    width: 34px !important;
+    height: 34px !important;
+    margin-top: 22px !important;
+    flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+    #loader {
+        border-width: 5px !important;
+    }
+
+    #loader h1 {
+        letter-spacing: 0 !important;
+    }
+}
+
+@media (max-height: 500px) {
+    #loader {
+        padding: 8px !important;
+    }
+
+    #loader p {
+        margin-top: 5px !important;
+    }
+
+    #loader::after {
+        margin-top: 10px !important;
+    }
+  }
+
