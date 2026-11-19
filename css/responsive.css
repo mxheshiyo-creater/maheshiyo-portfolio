@@ -1,0 +1,456 @@
+
+/* =====================================
+   MAHESH PERSONAL PORTFOLIO
+   UPDATED RESPONSIVE STYLESHEET
+===================================== */
+
+/* =====================================
+   LARGE LAPTOPS
+===================================== */
+
+@media screen and (max-width: 1200px) {
+
+    body {
+        padding: 14px;
+    }
+
+    .hero {
+        gap: 25px;
+        min-height: 550px;
+    }
+
+    .profile-container {
+        flex-basis: 310px;
+    }
+
+    .profile-frame {
+        width: 290px;
+        height: 350px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-links li a {
+        padding: 10px 9px;
+        font-size: 12px;
+    }
+}
+
+/* =====================================
+   TABLETS AND SMALL LAPTOPS
+===================================== */
+
+@media screen and (max-width: 992px) {
+
+    .header {
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-links li a {
+        font-size: 11px;
+        padding: 9px 7px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 55px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 22px;
+    }
+
+    .hero-description {
+        font-size: 23px;
+    }
+
+    .profile-container {
+        flex-basis: 270px;
+    }
+
+    .profile-frame {
+        width: 250px;
+        height: 310px;
+    }
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+}
+
+/* =====================================
+   MOBILE NAVIGATION
+===================================== */
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: calc(100% + 12px);
+        left: 0;
+        right: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 7px;
+
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(15px);
+
+        border: 2px solid var(--border-color);
+        border-radius: 16px;
+
+        padding: 12px;
+        margin: 0;
+
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-links.active {
+        display: flex;
+        animation: navSlide 0.3s ease;
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: flex;
+        justify-content: flex-start;
+
+        width: 100%;
+
+        padding: 13px 15px;
+        font-size: 14px;
+
+        border-radius: 10px;
+    }
+
+    .nav-links li a:hover {
+        background: var(--button-color);
+        transform: translateX(5px);
+    }
+
+    .nav-links li a::after {
+        display: none;
+    }
+
+    .nav-icon {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+/* =====================================
+   TABLET AND MOBILE LAYOUT
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 10px 18px;
+        top: 5px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    /* HERO */
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+
+        gap: 35px;
+        padding: 45px 6%;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        font-size: 22px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    /* PROFILE */
+
+    .profile-container {
+        width: 100%;
+        flex: auto;
+    }
+
+    .profile-frame {
+        width: min(75vw, 280px);
+        height: min(90vw, 330px);
+    }
+
+    /* SECTIONS */
+
+    section {
+        padding: 40px 6%;
+        margin-bottom: 15px;
+        border-radius: 18px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .intro-section p:not(.section-label) {
+        font-size: 23px;
+    }
+
+    /* DETAILS */
+
+    .details-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .detail-card {
+        padding: 18px 10px;
+    }
+
+    .detail-card h3 {
+        font-size: 19px;
+    }
+
+    .detail-card p {
+        font-size: 21px;
+    }
+
+    /* SOCIAL */
+
+    .social-links {
+        gap: 12px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding: 25px 12px;
+    }
+
+    .footer-links {
+        gap: 12px;
+    }
+
+    .footer-links a {
+        font-size: 19px;
+    }
+}
+
+/* =====================================
+   SMALL MOBILE PHONES
+===================================== */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 7px;
+    }
+
+    .header {
+        border-radius: 13px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .menu-btn {
+        width: 42px;
+        height: 42px;
+        font-size: 21px;
+    }
+
+    .hero {
+        padding: 35px 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content h2 {
+        font-size: 19px;
+    }
+
+    .hero-description {
+        font-size: 20px;
+    }
+
+    .welcome-text,
+    .section-label {
+        font-size: 15px;
+    }
+
+    .profile-frame {
+        width: 230px;
+        height: 280px;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 20px;
+    }
+
+    /* DETAILS */
+
+    .details-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .detail-card {
+        padding: 15px 7px;
+    }
+
+    .detail-card p {
+        font-size: 18px;
+        overflow-wrap: anywhere;
+    }
+
+    .detail-card h3 {
+        font-size: 17px;
+    }
+
+    /* SECTIONS */
+
+    section {
+        padding: 32px 5%;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    /* SOCIAL */
+
+    .social-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .social-links a {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    /* FOOTER */
+
+    .footer p {
+        font-size: 19px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+/* =====================================
+   VERY SMALL SCREENS
+===================================== */
+
+@media screen and (max-width: 350px) {
+
+    .hero-content h1 {
+        font-size: 29px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-frame {
+        width: 200px;
+        height: 250px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+        padding: 12px;
+    }
+}
+
+/* =====================================
+   REDUCED MOTION ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
